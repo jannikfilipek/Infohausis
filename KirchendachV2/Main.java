@@ -7,5 +7,8 @@ public class Main {
         höheVieleckMeter = Abfrage.höheVieleckMeter();
         längeGrundflächeMeter = Abfrage.längeGrundflächeMeter();
         längeVieleckMeter = Abfrage.längeVieleckMeter();
+        Berechnung kirchendach = new Berechnung(gesamtHöheMeter, höheVieleckMeter, längeGrundflächeMeter, längeVieleckMeter);
+        System.out.println(kirchendach.höheTrapetzMeter());
     }
+
 }
